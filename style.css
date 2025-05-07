@@ -26,7 +26,7 @@
   
   header {
     padding: 2rem;
-    background: linear-gradient(to bottom, #000000, #1c1c1c);
+    background: linear-gradient(to bottom, var(--bg-color), var(--card-bg));
     text-align: center;
   }
   
@@ -35,7 +35,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #181818;
+    background-color: var(--card-bg);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -145,8 +145,9 @@
   footer {
     text-align: center;
     padding: 2rem;
-    background-color: #181818;
-    color: #aaa;
+    background-color: var(--card-bg);
+    color: var(--text-color);
     font-size: 0.9rem;
     margin-top: 2rem;
   }
+  
