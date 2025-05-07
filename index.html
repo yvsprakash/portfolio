@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Venkata Sai Prakash Yerramsetti | AI Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script defer src="script.js"></script>
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
   <header id="home">
@@ -19,22 +22,23 @@
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
     </nav>
-    <div class="hero">
+    <div class="hero" data-aos="fade-up">
       <h1>Hello, I'm <span>Venkata Sai Prakash</span></h1>
       <p>AI & Data Science Professional | Generative AI | NLP | M.S. in Artificial Intelligence</p>
     </div>
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h2>About Me</h2>
       <p>
         AI and data science professional pursuing M.S. in Artificial Intelligence at San Jose State University. Experienced in building LLM-powered apps, RAG systems, and scalable AI pipelines. Skilled in Python, PyTorch, AWS, and real-time NLP solutions.
       </p>
     </section>
 
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
       <h2>Experience</h2>
       <div class="timeline">
         <div class="entry">
@@ -48,33 +52,38 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>FlashML – AutoML Library</h3>
-        <p>PyPI-published AutoML tool using Optuna, joblib, and CLI for classification/regression tasks.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/flashml.png" alt="FlashML Logo">
+          <h3>FlashML – AutoML Library</h3>
+          <p>PyPI-published AutoML tool using Optuna, joblib, and CLI for classification/regression tasks.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/healthbot.png" alt="Healthcare Chatbot">
+          <h3>Healthcare Chatbot with RAG</h3>
+          <p>Built AI assistant using GPT-4, LangChain, and Pinecone for medical response generation.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/emotion.png" alt="Emotion Recognition">
+          <h3>Real-time Emotion Recognition</h3>
+          <p>Live face tracking and emotion detection using CNN, OpenCV, and Transformers with 92% accuracy.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/course_reco.png" alt="Course Recommender">
+          <h3>Course Recommendation System</h3>
+          <p>Hybrid model using collaborative filtering, PyTorch, and FastAPI deployed with Docker.</p>
+        </div>
       </div>
-      <div class="project">
-        <h3>Healthcare Chatbot with RAG</h3>
-        <p>Built AI assistant using GPT-4, LangChain, and Pinecone for medical response generation.</p>
-      </div>
-      <div class="project">
-        <h3>Real-time Emotion Recognition</h3>
-        <p>Live face tracking and emotion detection using CNN, OpenCV, and Transformers with 92% accuracy.</p>
-      </div>
-      <div class="project">
-        <h3>Course Recommendation System</h3>
-        <p>Hybrid model using collaborative filtering, PyTorch, and FastAPI deployed with Docker.</p>
-      </div>
-    </div>
     </section>
 
-    <section id="publication">
+    <section id="publication" data-aos="fade-up">
       <h2>Publication</h2>
       <p><strong>Driver Drowsiness Alert System</strong> – Published in Journal of Algebraic Statistics. CNN-based real-time drowsiness detection using facial and eye landmarks with 96% accuracy.</p>
     </section>
 
-    <section id="certifications">
+    <section id="certifications" data-aos="fade-up">
       <h2>Certifications</h2>
       <ul>
         <li>Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</li>
@@ -84,7 +93,7 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:venkatasaiprakash24@gmail.com">venkatasaiprakash24@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/yvsprakash/" target="_blank">yvsprakash</a></p>
@@ -95,5 +104,8 @@
   <footer>
     <p>&copy; 2025 Venkata Sai Prakash Yerramsetti. All rights reserved.</p>
   </footer>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
